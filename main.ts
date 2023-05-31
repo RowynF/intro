@@ -255,3 +255,12 @@ game.showLongText("We are also using all the materials available on this planet.
 game.splash("There are disadvantages.")
 game.splash("We have made toxic")
 game.splash("Plastics")
+game.showLongText("Your on a mission to solve this essue by removing the trash", DialogLayout.Bottom)
+game.showLongText("Your You ready for this mission?", DialogLayout.Bottom)
+story.showPlayerChoices("Yes", "No")
+if (story.checkLastAnswer("Yes")) {
+    game.splash("Get Ready!")
+} else {
+    game.showLongText("What will you like to do know?", DialogLayout.Bottom)
+    story.showPlayerChoices("Restart", "Extra")
+}
